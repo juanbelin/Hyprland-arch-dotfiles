@@ -1,5 +1,7 @@
 # Hyprland Arch Linux Dotfiles
 
+**NOT COMPLETE YET**
+
 These are the dotfiles for my personal Arch Linux "rice," configured with the Hyprland compositor.
 
 **Operating System:** Arch Linux

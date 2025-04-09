@@ -1,0 +1,172 @@
+* {
+    /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
+    font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    transition: background-color .3s ease-out;
+}
+
+window#waybar {
+    background: rgba(26, 27, 38, 0.75);
+    color: #c0caf5;
+    font-family: 
+        SpaceMono Nerd Font,
+        feather;
+    transition: background-color .5s;
+}
+
+.modules-left,
+.modules-center,
+.modules-right
+{
+    background: rgba(0, 0, 8, .7);
+    margin: 3px 12px;
+    padding: 0 5px;
+    border-radius: 15px;
+}
+.modules-left {
+    padding: 0;
+}
+.modules-center {
+    padding: 0 5px;
+}
+
+.modules-right {
+    margin: 8px 12px;
+    padding: 0 5px;
+}
+
+#clock,
+#battery,
+#cpu,
+#bluetooh,
+#memory,
+#disk,
+#cutom-ip,
+#custom-vpn,
+#custom-power,
+#custom-spotify,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-notification,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#taskbar,
+#power-profiles-daemon,
+#language,
+#mpd {
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+#clock:hover,
+#battery:hover,
+#custom-ip:hover,
+#custom-notification:hover,
+#custom-power:hover,
+#bluetooh:hover,
+#custom-vpn:hover,
+#cpu:hover,
+#custom-spotify:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover,
+#wireplumber:hover,
+#custom-media:hover,
+#tray:hover,
+#mode:hover,
+#idle_inhibitor:hover,
+#scratchpad:hover,
+#power-profiles-daemon:hover,
+#language:hover,
+#mpd:hover {
+    background: rgba(26, 27, 38, 0.9);
+}
+
+#custom-ip {
+ color : #7773ff;
+}
+
+#custom-vpn {
+ color : #009929;
+}
+
+#custom-spotify { 
+  color : #009929;
+  font-size: 13px;
+}
+
+#custom-power { 
+ color : #fc0303;
+ font-size: 25px;
+}
+
+#bluetooth {
+ font-size: 18px;
+}
+
+#workspaces button {
+  background: transparent;
+  font-family:
+    SpaceMono Nerd Font,
+    feather;
+  font-weight: 900;
+  font-size: 13pt;
+  color: #ffa200;
+  border:none;
+  border-radius: 15px;
+}
+
+#workspaces button.empty {
+    color: #c0caf5; 
+}
+
+#workspaces button.active {
+    color: #FF0000;
+}
+
+
+
+#workspaces button:hover {
+  background: #11111b;
+  box-shadow: none;
+}
+
+
+#custom-arch {
+    margin-left: 5px;
+    padding: 0 10px;
+    font-size: 25px;
+    transition: color .5s;
+}
+#custom-arch:hover {
+    color: #1793d1;
+}
+
+#taskbar {
+    background: rgba(20, 20, 30, 0.85); /* Ajustado para ser aún más oscuro y distintivo */
+    color: #c0caf5; /* Mantengo el mismo color para cohesión */
+    font-family:
+        SpaceMono Nerd Font,
+        feather; /* Respetando tus preferencias de fuente */
+    font-size: 15px; /* Consistencia con el resto del estilo */
+    padding: 5px 10px; /* Espaciado interno ajustado */
+    margin: 5px; /* Espaciado externo ligero para destacar la barra */
+    border-radius: 12px; /* Bordes redondeados coherentes con el diseño global */
+    border: none; /* Sin bordes para seguir tu estilo minimalista */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra para darle profundidad */
+    transition: background-color 0.5s ease-out; /* Transición suave para interacciones */
+}
+
+#taskbar:hover {
+    background: rgba(26, 27, 38, 0.9); /* Color de fondo más intenso al interactuar */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al hover */
+}

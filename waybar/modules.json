@@ -1,0 +1,195 @@
+{
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": true,
+        "tooltip-format": "btw",
+        "on-click" : "/home/belin/.config/rofi/launchers/type-3/launcher.sh"
+    },
+
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 15,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "on-scroll-up": "switch-prev",
+    "on-scroll-down": "switch-next",
+    "ignore-list": [
+	    "kitty"
+	],
+
+},
+
+
+
+"custom/spotify": {
+    "exec": "playerctl -p spotify metadata --format '{{ title }} - {{ artist }}'",
+    "interval": 1,
+    "format": "  {text}",
+    "on-click": "playerctl -p spotify play-pause"
+  },
+
+
+
+    "custom/vpn": {
+       "interval": 3,
+       "format": "{}",
+       "exec": "ip add show | grep -qF tun0 && echo 󰆧 Connected || echo 󰆧 N/A",
+       "max-length": "100",
+    },
+
+
+   "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "",
+        "10": "",
+        "active": "",
+        "default": ""
+        },
+    "persistent-workspaces": {
+        "*": 10 // 10 espacios de trabajo por defecto en cada monitor
+    }
+
+
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-bluetooth-muted": "  {icon}",
+        "format-muted": " ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "  ",
+            "hands-free": "  ",
+            "headset": "  ",
+            "phone": "  ",
+            "portable": "  ",
+            "car": "",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "/usr/bin/pavucontrol"
+    },
+    "network": {
+        "format-wifi": "   {essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "interval": 5,
+      	"on-click": "nm-connection-editor"
+	 
+    },
+
+    "custom/ip": {
+    "exec": "hostname -i | awk '{print $1}' ",
+    "interval": 5,
+    "format": "  {}",
+    "tooltip": "IP local",
+    "on-click": "nmcli connection show"
+},
+
+    "custom/power": {
+    "format": "󰐥 {}",
+    "on-click" : "/home/belin/.config/rofi/powermenu/type-4/powermenu.sh"
+},
+
+
+
+    "cpu": {
+        "format": "  {usage}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": "  {}%",
+	      "tooltip": true
+    },
+    "temperature": {
+        "interval": 10,
+        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
+        "critical-threshold": 100,
+        "format-critical": " {temperatureC}",
+        "format": " {temperatureC}°C"
+    },
+    "hyprland/language": {
+       "format": "  {}",
+       "format-en": "EN",
+       "format-ru": "RU"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-full": "{icon}  {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{time}  {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "clock": {
+        "format": "{:%H:%M | %e %B} ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "on-click-right" : "/home/belin/.config/rofi/applets/bin/apps.sh"
+    },
+
+   "disk": {
+        "format": " {}%"
+   },
+   
+   "bluetooth": {
+    "format": "󰂯 {}" ,
+    "format-connected": "󰂱 {device_alias}",
+    "format-disabled" : "",
+    "format-off" : "Turn off",
+    "on-click": "blueman-manager",
+  }
+
+}

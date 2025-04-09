@@ -1,19 +1,41 @@
-# Hyprland-arch-dotfiles
-This are my dotfiles from a Arch Hacking rice
+# Hyprland Arch Linux Dotfiles
 
-![](/images/rice_1.png)
+These are the dotfiles for my personal Arch Linux "rice," configured with the Hyprland compositor.
 
-![](/images/rice_2.png)
+**Operating System:** Arch Linux
 
-![](/images/rice_3.png)
+**Window Manager:** [Hyprland](https://hyprland.org/) 
 
-![](/images/rice_4.png)
+**Bar:** [Waybar](https://github.com/Alexays/Waybar) 
 
-![](/images/rice_5.png)
+**Notes App:** [Obsidian](https://obsidian.md/) 
 
-![](/images/rice_6.png)
+**Launcher/Power Menu:** [Rofi](https://github.com/adi1090x/rofi) 
 
-![](/images/rice_7.jpg)
+**Screen Locker:** [Hyprland Lock](https://wiki.hyprland.org/Utilities/Hyprlock/) 
 
-![](/images/rice_8.jpg)
+**Text Editor:** [NvChad](https://nvchad.com/) 
 
+**Terminal Emulator:** [Kitty](https://sw.kovidgoyal.net/kitty/) 
+
+**Display Manager:** [SDDM](https://github.com/sddm/sddm) Theme: [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
+
+## Screenshots
+
+Here are some screenshots showcasing the rice:
+
+![Rice Screenshot 1](/images/rice_1.png)
+
+![Rice Screenshot 2](/images/rice_2.png)
+
+![Rice Screenshot 3](/images/rice_3.png)
+
+![Rice Screenshot 4](/images/rice_4.png)
+
+![Rice Screenshot 5](/images/rice_5.png)
+
+![Rice Screenshot 6](/images/rice_6.png)
+
+![Rice Screenshot 7](/images/rice_7.jpg)
+
+![Rice Screenshot 8](/images/rice_8.jpg)

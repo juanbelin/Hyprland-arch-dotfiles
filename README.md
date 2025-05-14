@@ -24,6 +24,11 @@ These are the dotfiles for my personal Arch Linux "rice," configured with the Hy
 
 **BlackArch repo:** https://blackarch.org/downloads.html
 
+
+
+## Video
+![](/img/poc.mp4)
+
 ## Screenshots
 
 Here are some screenshots showcasing the rice:

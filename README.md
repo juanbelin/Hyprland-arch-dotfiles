@@ -27,8 +27,10 @@ These are the dotfiles for my personal Arch Linux "rice," configured with the Hy
 
 ## Video 
 
-[![](/images/poc.png])](https://youtu.be/lpfnx4CC9cw)
 
+https://youtu.be/lpfnx4CC9cw
+
+[![Alt text](images/poc.png)](https://www.youtube.com/watch?v=lpfnx4CC9cw)
 ## Screenshots
 
 Here are some screenshots showcasing the rice:

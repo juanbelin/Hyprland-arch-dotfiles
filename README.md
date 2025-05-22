@@ -25,6 +25,9 @@ These are the dotfiles for my personal Arch Linux "rice," configured with the Hy
 **BlackArch repo:** https://blackarch.org/downloads.html
 
 
+## Video 
+
+![](https://youtu.be/lpfnx4CC9cw)
 
 ## Screenshots
 

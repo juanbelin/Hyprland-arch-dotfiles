@@ -27,7 +27,7 @@ These are the dotfiles for my personal Arch Linux "rice," configured with the Hy
 
 ## Video 
 
-[![poc](/images/poc.png])](https://youtu.be/lpfnx4CC9cw)
+[![](/images/poc.png])](https://youtu.be/lpfnx4CC9cw)
 
 ## Screenshots
 
